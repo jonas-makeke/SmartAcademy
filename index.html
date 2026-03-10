@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>SmartAcademy Digital – Former les talents du numérique</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="SmartAcademy Digital, académie de formation en technologies numériques : développement web, mobile, réseaux, cybersécurité, bureautique, design graphique."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container topbar__inner">
+        <div class="topbar__brand">
+          <img src="../image2.png" alt="SmartAcademy Digital" class="topbar__logo" />
+          <div class="topbar__brand-text">
+            <span class="topbar__brand-name">SmartAcademy</span>
+            <span class="topbar__brand-tag">DIGITAL</span>
+          </div>
+        </div>
+
+        <nav class="nav" id="mainNav">
+          <a href="#accueil" class="nav__link nav__link--active">Accueil</a>
+          <a href="#apropos" class="nav__link">À propos</a>
+          <a href="#formations" class="nav__link">Formations</a>
+          <a href="#admission" class="nav__link">Admission</a>
+          <a href="#actualites" class="nav__link">Actualités</a>
+          <a href="#contact" class="nav__link">Contact</a>
+        </nav>
+
+        <button id="themeToggle" class="theme-toggle" aria-label="Basculer clair/sombre">🌙</button>
+
+        <button class="topbar__cta" onclick="scrollToSection('#admission')">S’inscrire</button>
+
+        <button class="topbar__burger" id="burgerBtn" aria-label="Ouvrir le menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <section id="accueil" class="hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="hero__eyebrow">Académie de formation en technologies numériques</p>
+          <h1 class="hero__title">Former les talents du numérique</h1>
+          <p class="hero__subtitle">
+            SmartAcademy Digital accompagne les étudiants, professionnels et passionnés à maîtriser
+            les compétences clés du numérique : développement web et mobile, réseaux, cybersécurité,
+            bureautique et design graphique.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#admission" class="btn btn--primary">S’inscrire maintenant</a>
+            <a href="#formations" class="btn btn--outline">Voir les formations</a>
+          </div>
+
+          <div class="hero__stats">
+            <div class="stat">
+              <div class="stat__number" data-target="8">0</div>
+              <div class="stat__label">Formations</div>
+            </div>
+            <div class="stat">
+              <div class="stat__number" data-target="120">0</div>
+              <div class="stat__label">Étudiants accompagnés</div>
+            </div>
+            <div class="stat">
+              <div class="stat__number" data-target="95">0</div>
+              <div class="stat__label">% de satisfaction</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__card">
+          <h2 class="hero-card__title">Une pédagogie orientée pratique</h2>
+          <p class="hero-card__text">
+            Des projets, des cas concrets et un accompagnement individuel pour construire un
+            véritable profil professionnel dans le domaine du numérique.
+          </p>
+          <ul class="hero-card__list">
+            <li>Modules progressifs et structurés</li>
+            <li>Ateliers pratiques en petits groupes</li>
+            <li>Projets de fin de formation (portfolio)</li>
+            <li>Coaching insertion professionnelle</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="apropos" class="section section--alt">
+      <div class="container section__inner section__inner--two">
+        <div>
+          <h2 class="section__title">À propos de SmartAcademy Digital</h2>
+          <p class="section__text">
+            SmartAcademy Digital est une académie de formation spécialisée dans les technologies
+            numériques. Notre objectif est de rendre les compétences digitales accessibles, concrètes
+            et immédiatement exploitables sur le marché du travail.
+          </p>
+          <p class="section__text">
+            Nous mettons l’accent sur l’apprentissage par la pratique, avec des exercices guidés,
+            des projets réels et un suivi de proximité.
+          </p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <h3 class="card__title">Mission</h3>
+            <p class="card__text">
+              Former des professionnels du numérique capables de concevoir, sécuriser et maintenir
+              des solutions modernes, utiles pour les entreprises et les communautés.
+            </p>
+          </article>
+          <article class="card">
+            <h3 class="card__title">Vision</h3>
+            <p class="card__text">
+              Devenir une référence dans la formation digitale en Afrique et à l’international, à
+              travers la qualité pédagogique, l’innovation et l’employabilité de nos apprenants.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="formations" class="section">
+      <div class="container">
+        <h2 class="section__title section__title--center">Formations proposées</h2>
+        <p class="section__subtitle">
+          Des parcours adaptés aux débutants comme aux profils en reconversion.
+        </p>
+
+        <div class="grid">
+          <article class="card card--program">
+            <h3 class="card__title">Informatique de base</h3>
+            <p class="card__text">
+              Manipulation de l’ordinateur, des fichiers, d’internet et des outils essentiels.
+            </p>
+          </article>
+          <article class="card card--program">
+            <h3 class="card__title">Bureautique professionnelle</h3>
+            <p class="card__text">
+              Word, Excel, PowerPoint, outils collaboratifs et bonnes pratiques pour le bureau.
+            </p>
+          </article>
+          <article class="card card--program">
+            <h3 class="card__title">Développement web</h3>
+            <p class="card__text">
+              HTML, CSS, JavaScript, frameworks modernes, APIs et bases de données.
+            </p>
+          </article>
+          <article class="card card--program">
+            <h3 class="card__title">Développement mobile</h3>
+            <p class="card__text">
+              Conception d’applications Android/iOS, UI/UX mobile et publication sur stores.
+            </p>
+          </article>
+          <article class="card card--program">
+            <h3 class="card__title">Réseaux informatiques</h3>
+            <p class="card__text">
+              Architecture réseau, adressage, configuration, sécurité et dépannage.
+            </p>
+          </article>
+          <article class="card card--program">
+            <h3 class="card__title">Maintenance informatique</h3>
+            <p class="card__text">
+              Diagnostic, réparation, optimisation et bonnes pratiques d’entretien.
+            </p>
+          </article>
+          <article class="card card--program">
+            <h3 class="card__title">Cybersécurité</h3>
+            <p class="card__text">
+              Hygiène numérique, protection des données, sensibilisation aux attaques courantes.
+            </p>
+          </article>
+          <article class="card card--program">
+            <h3 class="card__title">Design graphique</h3>
+            <p class="card__text">
+              Identité visuelle, UI, réseaux sociaux et outils de création graphique.
+            </p>
+          </article>
+          <article class="card card--program">
+            <h3 class="card__title">Initiation au Web3 & blockchain</h3>
+            <p class="card__text">
+              Comprendre les fondamentaux de la blockchain, des cryptomonnaies, des NFT et des
+              applications décentralisées (dApps), sans prérequis technique avancé.
+            </p>
+          </article>
+          <article class="card card--program">
+            <h3 class="card__title">Développement Web3 & Smart Contracts</h3>
+            <p class="card__text">
+              Apprendre à développer des smart contracts (Solidity), des dApps et des interfaces
+              web connectées à la blockchain, avec un fort accent sur la sécurité et les bonnes
+              pratiques.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="admission" class="section section--alt">
+      <div class="container section__inner section__inner--two">
+        <div>
+          <h2 class="section__title">Admission & inscription</h2>
+          <p class="section__text">
+            L’inscription est ouverte aux étudiants, professionnels et personnes en reconversion
+            motivées par les métiers du numérique.
+          </p>
+
+          <ul class="list">
+            <li>Être motivé(e) et disponible pour suivre la formation choisie.</li>
+            <li>Avoir un niveau scolaire suffisant pour suivre les cours (collège/lycée ou plus).</li>
+            <li>Remplir le formulaire d’inscription et fournir les pièces demandées.</li>
+          </ul>
+
+          <p class="section__text">
+            Les durées de formation varient de <strong>4 semaines à 6 mois</strong> selon le
+            programme et le rythme (soir, week-end, intensif).
+          </p>
+        </div>
+
+        <form class="form">
+          <h3 class="form__title">Formulaire d’inscription</h3>
+          <div class="form__row">
+            <label class="form__label">
+              Nom complet
+              <input type="text" class="form__input" placeholder="Votre nom complet" required />
+            </label>
+          </div>
+          <div class="form__row form__row--two">
+            <label class="form__label">
+              Email
+              <input type="email" class="form__input" placeholder="vous@email.com" required />
+            </label>
+            <label class="form__label">
+              Téléphone
+              <input type="tel" class="form__input" placeholder="+000 000 000 000" required />
+            </label>
+          </div>
+          <div class="form__row">
+            <label class="form__label">
+              Formation souhaitée
+              <select class="form__input" required>
+                <option value="">Choisissez une formation</option>
+                <option>Informatique de base</option>
+                <option>Bureautique professionnelle</option>
+                <option>Développement web</option>
+                <option>Développement mobile</option>
+                <option>Réseaux informatiques</option>
+                <option>Maintenance informatique</option>
+                <option>Cybersécurité</option>
+                <option>Design graphique</option>
+              </select>
+            </label>
+          </div>
+          <div class="form__row">
+            <label class="form__label">
+              Message (optionnel)
+              <textarea
+                class="form__input form__input--textarea"
+                placeholder="Parlez-nous de votre projet ou de vos attentes…"
+              ></textarea>
+            </label>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Envoyer ma demande</button>
+          <p class="form__note">
+            Ce formulaire est une démo front-end. Vous pouvez connecter un back-end ou un outil
+            d’emailing (EmailJS, Formspree, etc.) pour le rendre fonctionnel.
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <section id="actualites" class="section">
+      <div class="container">
+        <h2 class="section__title section__title--center">Actualités & blog</h2>
+        <p class="section__subtitle">
+          Articles pour suivre les tendances technologiques et la vie de l’académie.
+        </p>
+
+        <div class="grid grid--blog">
+          <article class="card card--blog">
+            <h3 class="card__title">Tendances 2026 : IA, cloud et cybersécurité</h3>
+            <p class="card__meta">Mars 2026 · Technologie</p>
+            <p class="card__text">
+              Les compétences les plus recherchées et comment SmartAcademy Digital prépare ses
+              apprenants à ces nouveaux défis.
+            </p>
+            <a href="#actualites" class="card__link">Lire l’article</a>
+          </article>
+
+          <article class="card card--blog">
+            <h3 class="card__title">Bien démarrer dans le développement web</h3>
+            <p class="card__meta">Mars 2026 · Développement</p>
+            <p class="card__text">
+              HTML, CSS, JavaScript : une feuille de route claire pour débuter dans la création de
+              sites et d’applications web.
+            </p>
+            <a href="#actualites" class="card__link">Lire l’article</a>
+          </article>
+
+          <article class="card card--blog">
+            <h3 class="card__title">Pourquoi se former à la bureautique avancée ?</h3>
+            <p class="card__meta">Mars 2026 · Productivité</p>
+            <p class="card__text">
+              Maîtriser les outils bureautiques reste essentiel pour booster son efficacité et son
+              employabilité.
+            </p>
+            <a href="#actualites" class="card__link">Lire l’article</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section--alt">
+      <div class="container section__inner section__inner--two">
+        <div>
+          <h2 class="section__title">Contact</h2>
+          <p class="section__text">
+            Une question sur une formation, un partenariat ou une inscription&nbsp;? Contactez
+            SmartAcademy Digital.
+          </p>
+
+          <ul class="list list--contact">
+            <li>📍 <strong>Adresse :</strong> À compléter (ville, quartier, pays)</li>
+            <li>📞 <strong>Téléphone :</strong> +000 000 000 000</li>
+            <li>
+              ✉️ <strong>Email :</strong>
+              <a href="mailto:smartacademydigital1@gmail.com" class="contact__email">
+                smartacademydigital1@gmail.com
+              </a>
+            </li>
+          </ul>
+
+          <div class="contact__socials">
+            <a href="#" aria-label="Facebook" class="social-btn">f</a>
+            <a href="#" aria-label="Instagram" class="social-btn">in</a>
+            <a href="#" aria-label="LinkedIn" class="social-btn">li</a>
+          </div>
+        </div>
+
+        <div class="map-wrapper">
+          <iframe
+            title="Localisation SmartAcademy Digital"
+            src="https://www.google.com/maps?q=SmartAcademy%20Digital&output=embed"
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="footer__copy">
+          © <span id="year"></span> SmartAcademy Digital. Tous droits réservés.
+        </p>
+        <p class="footer__credit">Site vitrine premium en HTML, CSS et JavaScript.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
